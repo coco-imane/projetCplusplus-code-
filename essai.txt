@@ -1,0 +1,103 @@
+C++
+
+/
+
+le but des langages de programmation est de nous permettre de parler à l'ordinateur plus simplement qu'en binaire(langage binaire est constitué de 0 et 1, 101001... peut signifier quelque chose ,ce que l'ordinateur comprend )
+
+donc :
+
+on écrit des instructions dans un langage de programmation
+
+ensuite il y'a compilation (promgramme de traduction qui traduit en binaire )
+
+enfin exécution (l'ordinateur lit le binaire et fait ce qu'on lui demande)
+
+/
+
+un langage de haut niveau est un langage éloigné du fonctionnement de la machine(donc du binaire), permet de développer de façon plus souple et rapide.
+
+un langage de bas niveau est plus proche du fonctionnement de la machine : il demande plus d'efforts mais donne aussi plus de contrôle sur ce qu'on fait
+
+/
+
+exemple d'un code c++ qui affiche bonjour le monde :
+
+#include <iostream>
+
+using namespace std;
+
+int main() 
+
+{ 
+
+cout << "Hello world!" << endl; 
+
+return 0;
+
+}
+
+• les commentaire en c++ :
+
+on les fait soit avec deux slach // ou bien slach etoile /* ,et ils ont aucun effet sur le programme.
+
+on laisse des lignes vide pour quenotre programme soit bien visible .
+
+/ 
+
+• en C++ les lignes commencent par un diese(#) 
+
+Les lignes commençant par un signe dièse ( #) sont des directives lues et interprétées par ce qu'on appelle le préprocesseur . Ce sont des lignes spéciales interprétées avant le début de la compilation du programme. Dans ce cas, la directive #include <iostream>indique au préprocesseur d'inclure une section de code C ++ standard, appelée en- tête iostream , qui permet d'effectuer des opérations d'entrée et de sortie standard, telles que l'écriture de la sortie de ce programme (Bonjour le monde) à l'écran.
+
+/
+
+• int main () Cette ligne initie la déclaration d'une fonction. Essentiellement, une fonction est un groupe d'instructions de code qui reçoivent un nom: dans ce cas, cela donne le nom "main" au groupe d'instructions de code qui suit. leur définition est introduite avec une succession d'un type ( int), d'un nom ( main) et d'une paire de parenthèses ( ()), incluant éventuellement des paramètres. La fonction nommée main est une fonction spéciale dans tous les programmes C ++; c'est la fonction appelée quand le programme est exécuté. L'exécution de tous les programmes C ++ commence par la main fonction, quel que soit l'emplacement de la fonction dans le code
+
+• L'accolade ouverte ( {) indique le début de main la définition de la fonction, et l'accolade fermante ( }) à indique sa fin. Tout entre ces accolades est le corps de la fonction qui définit ce qui se passe quand main on l'appelle. Toutes les fonctions utilisent des accolades pour indiquer le début et la fin de leurs définitions.
+
+• cout: commande l'affichage d'un message à l'écran ;
+
+• "Hello world!": indique le message à afficher ;
+
+• endl: crée un retour à la ligne dans la console.
+
+/
+
+pour executer le programme c++ sur terminal mac:`
+
+le fichier est enregistré sous nom fichier.cpp
+
+ensuite on crée le fichier sur le terminal avec nano fichier.cpp 
+
+execution :
+
+g ++ fichier.cpp(compilation)
+
+./a.out (resulat affiché)
+
+/
+
+Voici le strict minimum pour pouvoir programmeur :
+
+Un éditeur de texte pour écrire le code source du programme en C++ (exemple sublime texte ,on peut suntaxé directement en C++...)
+
+Un compilateur pour transformer « compiler »le code source en binaire.
+
+Un débugger « Débugueur » pour (trouver les erreur et les supprimé) du programme .
+
+/
+
+Un IDE(EDI :Environnement de Développement Intégré )est un outil pour les développeurs, qui permet de créer des programmes.
+
+il est composé d'un éditeur de texte, d'un compilateur et d'un debugger.
+
+Xcode(mac seulement) sont parmi les IDE les plus connus pour programmer en C++.
+
+/
+
+on a des programmation graphiques et des programmation console:
+
+Les programmes graphiques:Il s'agit des programmes qui affichent des fenêtres.ils génèrent à l'écran des fenêtres que l'on peut ouvrir, réduire, fermer, agrandir.(exemple ouvrir un epage web)..(Graphical User Interface - Interface Utilisateur Graphique).
+
+Les programmes console :Les programmes en console sont plus fréquents sous Linux que sous Windows et Mac OS X. Ils sont constitués de simples textes qui s'affichent à l'écran, le plus souvent en blanc sur fond noir .
+
+/
